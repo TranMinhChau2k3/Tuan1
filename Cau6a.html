@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jackson Electronics Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #add8e6;
+        }
+        form {
+            width: 60%;
+            margin: auto;
+        }
+        input[type=text], select {
+            width: 100%;
+            padding: 10px 20px;
+            margin: 1px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        input[type=submit], input[type=reset] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type=submit]:hover, input[type=reset]:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h2>Jackson Electronics</h2>
+    <h2>Registration Form</h2>
+    <form action="/submit_registration" method="post">
+        <label for="fname">First Name: </label>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname"><br>
+        <label for="address1">Address #1:</label>
+        <input type="text" id="address1" name="address1"><br>
+        <label for="address2">Address #2:</label>
+        <input type="text" id="address2" name="address2"><br>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state">
+        <label for="zip">Zip:</label>
+        <input type="text" id="zip" name="zip"><br>
+        <label for="country">Country:</label><br>
+        <input type="text" id="country" name="country"><br>
+        <label for="product">Product:</label><br>
+        <input type="text" id="product" name="product"><br>
+        <label for="purchasedate">Date Purchased:</label><br>
+        <input type="text" id="purchasedate" name="purchasedate"><br>
+        <label for="serial">Serial #:</label><br>
+        <input type="text" id="serial" name="serial"><br>
+        <input type="submit" value="Click to register">
+        <input type="reset" value="Click to cancel">
+    </form>
+</body>
+</html>
